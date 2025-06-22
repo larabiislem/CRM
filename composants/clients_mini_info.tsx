@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Mail, User, Calendar, DollarSign, BadgeCheck, Circle } from 'lucide-react';
+import {  Mail, User, Calendar, DollarSign, BadgeCheck, Circle } from 'lucide-react';
 
 interface Client {
   id: string;
@@ -90,10 +90,7 @@ export default function ClientsMiniInfo({ clients }: { clients: Client[] }) {
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center gap-2 text-lg font-medium text-white">
-        <Clock className="h-5 w-5 text-purple-400" />
-        <h2>Clients récents</h2>
-      </div>
+   
 
       <div className="space-y-3">
         {recentClients.map(client => (

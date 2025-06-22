@@ -1,5 +1,5 @@
 // import icons
-import { DollarSign, TrendingUp, UserPlus, Users } from "lucide-react"
+import { DollarSign, TrendingUp, UserPlus, Users,Clock } from "lucide-react"
 // import cart cmposant
 import Card from "@/composants/cart"
 
@@ -93,14 +93,25 @@ export default function Dashboard() {
         ))}
       </div>
 
-      <div>
-        <div className=" flex mt-8 mb-4">
+ <div className="mt-8 space-y-4">
+  <div className="flex items-center justify-between">
+    <div className="flex items-center gap-3">
+      <Clock className="h-5 w-5 text-purple-400" />
+      <h3 className="text-xl font-semibold text-white">Recent Clients</h3>
+    </div>
+    <a 
+      href="/clients" 
+      className="text-purple-300 hover:text-purple-400 transition-colors duration-200 text-sm"
+    >
+      View all 
+    </a>
+  </div>
 
-        <div className="flex-1">
-          <ClientsMiniInfo clients={clients} />
-        </div>
-      </div>
-      </div>
+  {/* Conteneur des cartes clients avec espacement */}
+  <div className="space-y-3">
+    <ClientsMiniInfo clients={clients} />
+  </div>
+</div>
     </div>
   )
 }
