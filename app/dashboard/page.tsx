@@ -2,6 +2,8 @@
 import { DollarSign, TrendingUp, UserPlus, Users } from "lucide-react"
 // import cart cmposant
 import Card from "@/composants/cart"
+// import client data
+import clients from "@/data/clients.json"
 
 export default function Dashboard() {
   // status data ( important kpi for the dashboard)
@@ -87,6 +89,10 @@ export default function Dashboard() {
             description={item.description}
           />
         ))}
+      </div>
+
+      <div>
+        
       </div>
     </div>
   )
