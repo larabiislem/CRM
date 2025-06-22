@@ -2,6 +2,8 @@
 import { DollarSign, TrendingUp, UserPlus, Users } from "lucide-react"
 // import cart cmposant
 import Card from "@/composants/cart"
+
+import ClientsMiniInfo from "@/composants/clients_mini_info"
 // import client data
 import clients from "@/data/clients.json"
 
@@ -92,7 +94,12 @@ export default function Dashboard() {
       </div>
 
       <div>
-        
+        <div className=" flex mt-8 mb-4">
+
+        <div className="flex-1">
+          <ClientsMiniInfo clients={clients} />
+        </div>
+      </div>
       </div>
     </div>
   )
