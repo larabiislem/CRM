@@ -1,6 +1,6 @@
 'use client'
 
-import { Search, Clock, User, Mail, Calendar, DollarSign, BadgeCheck } from 'lucide-react'
+import { Search } from 'lucide-react'
 import { useState } from 'react'
 import clients from '@/data/clients.json'
 import ClientCard from '@/composants/ClientCard'
