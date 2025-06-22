@@ -1,4 +1,5 @@
 import { User, Mail, BadgeCheck, Calendar, DollarSign } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 type Client = {
   id: string
@@ -12,9 +13,12 @@ type Client = {
   revenue?: number
 }
 
+
+
 export default function ClientCard({ client }: { client: Client }) {
+  const router = useRouter()
   return (
-    <div className="p-4 rounded-lg border border-gray-700 hover:bg-gray-800 transition-colors duration-300">
+    <div className="p-4 rounded-lg border border-gray-700 hover:bg-gray-800 transition-colors duration-300" onClick={() =>router.push(`/clients/${client.id}`) }>
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-4">
           <div className="p-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600">
