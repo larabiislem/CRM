@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { User, Mail, Phone, Briefcase, Tag, DollarSign, Plus } from 'lucide-react';
+import { User, Briefcase, Tag,  Plus } from 'lucide-react';
 
 export default function AddClientPage() {
   const router = useRouter();
