@@ -1,14 +1,13 @@
 'use client'
 
-import { Search, User, Mail, Calendar, DollarSign, BadgeCheck } from 'lucide-react'
+import { Search, Clock, User, Mail, Calendar, DollarSign, BadgeCheck } from 'lucide-react'
 import { useState } from 'react'
 import clients from '@/data/clients.json'
+import ClientCard from '@/composants/ClientCard'
 
 export default function ClientsPage() {
   const [searchTerm, setSearchTerm] = useState('')
-// traitement des client filtré pour la recherche
-// si on fait pas la recherche on affiche tous les clients
-// on utilise un useState pour stocker le terme de recherchee
+
   const filteredClients = clients.filter(client => 
     client.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
     client.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -41,68 +40,59 @@ export default function ClientsPage() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-
-     
-        <div className="mt-6 space-y-4">
-          {filteredClients.map(client => (
-            <div key={client.id} className="p-4 rounded-lg border border-gray-700 hover:bg-gray-800 transition-colors duration-300">
-              <div className="flex items-start justify-between">
-                <div className="flex items-center gap-4">
-                  <div className="p-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600">
-                    <User className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-white flex items-center gap-2">
-                      {client.firstName} {client.lastName}
-                      {client.status === 'vip' && (
-                        <BadgeCheck className="h-4 w-4 text-purple-400" />
-                      )}
-                    </h3>
-                    <div className="flex items-center gap-2 mt-1 text-sm text-gray-400">
-                      <Mail className="h-4 w-4" />
-                      <span>{client.email}</span>
-                    </div>
-                    {client.company && (
-                      <div className="text-sm text-gray-300 mt-1">
-                        {client.company} • {client.position}
-                      </div>
-                    )}
-                  </div>
-                </div>
-
-                <div className="text-right">
-                  <div className="flex items-center justify-end gap-2 text-xs text-gray-400">
-                    <Calendar className="h-3 w-3" />
-                    <span>
-                      {new Date(client.createdAt).toLocaleDateString('fr-FR')}
-                    </span>
-                  </div>
-                  {client.revenue && (
-                    <div className="flex items-center justify-end gap-2 mt-2 text-sm text-green-400">
-                      <DollarSign className="h-4 w-4" />
-                      <span>{client.revenue.toLocaleString('fr-FR')}€</span>
-                    </div>
-                  )}
-                  <div className={`mt-2 text-xs px-2 py-1 rounded-full inline-flex items-center ${
-                    client.status === 'active' ? 'bg-green-900/50 text-green-400' :
-                    client.status === 'vip' ? 'bg-purple-900/50 text-purple-400' :
-                    client.status === 'prospect' ? 'bg-blue-900/50 text-blue-400' :
-                    'bg-gray-700 text-gray-400'
-                  }`}>
-                    {client.status}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {filteredClients.length === 0 && (
-          <div className="text-center py-8 text-gray-400">
-            Aucun client trouvé pour "{searchTerm}"
-          </div>
+      <div className="space-y-4 mt-6">
+        {filteredClients.length > 0 ? (
+          filteredClients.map((client) => (
+            <ClientCard key={client.id} client={client} />
+          ))
+        ) : (
+          <p className="text-gray-500 italic">Aucun client trouvé.</p>
         )}
+      </div>
+
+       
       </div>
     </div>
   )
 }
+
+
+/*
+'use client'
+
+import { useState } from "react"
+import clients from "@/data/clients.json"
+import ClientCard from "@/composants/ClientCard"
+
+export default function ClientList() {
+  const [search, setSearch] = useState("")
+// traitement des client filtré pour la recherche
+// si on fait pas la recherche on affiche tous les clients
+// on utilise un useState pour stocker le terme de recherchee
+  const filteredClients = clients.filter((client) =>
+    `${client.firstName} ${client.lastName}`.toLowerCase().includes(search.toLowerCase()) ||
+    client.email.toLowerCase().includes(search.toLowerCase()) ||
+    client.company?.toLowerCase().includes(search.toLowerCase())
+  )
+// j'ai utiliser un composant ClientCard pour afficher les données de chaque client
+  return (
+    <div className="max-w-4xl mx-auto px-4 py-6">
+    
+
+    
+    </div>
+  )
+}
+
+
+  <div className="space-y-4">
+        {filteredClients.length > 0 ? (
+          filteredClients.map((client) => (
+            <ClientCard key={client.id} client={client} />
+          ))
+        ) : (
+          <p className="text-gray-500 italic">Aucun client trouvé.</p>
+        )}
+      </div>
+
+*/
