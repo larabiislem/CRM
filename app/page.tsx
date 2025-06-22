@@ -1,6 +1,25 @@
 'use client'
 import { Building2, Mail, Lock } from "lucide-react"
+import { useState  } from "react"
+import { useRouter } from "next/navigation";
 export default function Home() {
+
+const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const router = useRouter();
+
+
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+  console.log("Email:", email);
+  console.log("Password:", password);
+
+  router.push('/dashboard'); 
+
+
+}
+
+
   return (
 <div className="hidden lg:flex bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-700 relative overflow-hidden min-h-screen w-full items-center justify-center">
  
@@ -17,6 +36,8 @@ export default function Home() {
   <input
     id="email"
     type="email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
     placeholder="Enter your email"
     className="w-full h-12 pl-12 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
   />
@@ -29,12 +50,15 @@ export default function Home() {
   <input
     id="password"
     type="password"
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
     placeholder="Enter your password"
     className="w-full h-12 pl-12 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
   />
 </div>
 <button
   type="submit"
+  onClick={handleSubmit}
   className="w-full flex items-center justify-center gap-2 h-12 mt-2 bg-white/20 text-white border border-white/30 backdrop-blur-md font-semibold rounded-lg hover:bg-white/30 transition duration-200"
 >
   Se connecter
