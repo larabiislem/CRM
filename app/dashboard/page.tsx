@@ -6,7 +6,7 @@ import Card from "@/composants/cart"
 import ClientsMiniInfo from "@/composants/clients_mini_info"
 // import client data
 import clients from "@/data/clients.json"
-
+import Link from "next/link"
 export default function Dashboard() {
   // status data ( important kpi for the dashboard)
   const stats = [
@@ -99,15 +99,17 @@ export default function Dashboard() {
       <Clock className="h-5 w-5 text-purple-400" />
       <h3 className="text-xl font-semibold text-white">Recent Clients</h3>
     </div>
-    <a 
-      href="/clients" 
+
+    <Link
+    href="/clients" 
       className="text-purple-300 hover:text-purple-400 transition-colors duration-200 text-sm"
     >
-      View all 
-    </a>
+       View all 
+    </Link>
+  
   </div>
 
-  {/* Conteneur des cartes clients avec espacement */}
+
   <div className="space-y-3">
     <ClientsMiniInfo clients={clients} />
   </div>
