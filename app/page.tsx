@@ -6,18 +6,24 @@ export default function Home() {
 
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
+const [error, setError] = useState("");
 const router = useRouter();
 
+// verifier si l'email est valide sinon mettre a jour le state error
+  // regex pour valider l'email
+  const isValidEmail = (email: string) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
-  console.log("Email:", email);
-  console.log("Password:", password);
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!isValidEmail(email)) {
+      setError("Veuillez saisir une adresse email valide.");
+      return;
+    }
+    setError("");
+    router.push('/dashboard');
+  };
 
-  router.push('/dashboard'); 
-
-
-}
 
 
   return (
@@ -56,6 +62,9 @@ const handleSubmit = (e: React.FormEvent) => {
     className="w-full h-12 pl-12 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
   />
 </div>
+{error && (
+            <div className="text-red-400 text-sm mb-2 ml-1">{error}</div>
+          )}
 <button
   type="submit"
   onClick={handleSubmit}
