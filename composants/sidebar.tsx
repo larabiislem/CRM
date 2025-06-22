@@ -46,11 +46,7 @@ export default function Sidebar() {
         />
       </nav>
 
-      <div className="mt-auto pt-6 border-t border-gray-700">
-        <div className="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer">
-          © {new Date().getFullYear()} Mon CRM
-        </div>
-      </div>
+     
     </div>
   )
 }
