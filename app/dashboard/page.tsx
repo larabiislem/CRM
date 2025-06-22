@@ -61,7 +61,7 @@ export default function Dashboard() {
               Dashboard
             </h1>
             <p className="text-gray-400 mt-1">
-              Vue d'ensemble •{" "}
+              Vue d&apos;ensemble •{" "}
               <span className="text-purple-300">
                 {new Date().toLocaleDateString("fr-FR", {
                   weekday: "long",
@@ -70,7 +70,7 @@ export default function Dashboard() {
                   day: "numeric",
                 })}
               </span>
-            </p>
+</p>
           </div>
         </div>
         <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-700 to-transparent my-4" />
