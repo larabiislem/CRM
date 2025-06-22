@@ -1,0 +1,429 @@
+[
+  {
+    "id": "b9c41c7d-8d7d-4a3a-9d5e-9e8a7e9e8a7e",
+    "firstName": "Claire",
+    "lastName": "Dupont",
+    "email": "claire.dupont@example.com",
+    "phone": "06 12 34 56 78",
+    "createdAt": "2023-04-12T10:45:23.000Z",
+    "tags": ["VIP", "Actif"],
+    "activities": [
+      {
+        "type": "Appel téléphonique",
+        "description": "Premier contact téléphonique avec le client.",
+        "date": "2024-11-20T09:13:44.000Z"
+      },
+      {
+        "type": "Rendez-vous",
+        "description": "Rendez-vous fixé pour présenter les offres.",
+        "date": "2024-12-15T14:22:10.000Z"
+      },
+      {
+        "type": "Commande passée",
+        "description": "Le client a passé sa première commande.",
+        "date": "2025-01-04T16:30:25.000Z"
+      }
+    ],
+    "company": "TechCorp",
+    "position": "Responsable Marketing",
+    "revenue": 35000,
+    "status": "active",
+    "lastContact": "2025-06-12T11:45:00.000Z",
+    "notes": "Client très intéressé par nos nouvelles solutions cloud."
+  },
+  {
+    "id": "f3a12e4b-2a3b-4c5d-8e2a-7b1c2d3e4f56",
+    "firstName": "Lucas",
+    "lastName": "Morel",
+    "email": "lucas.morel@example.com",
+    "phone": "07 98 76 54 32",
+    "createdAt": "2023-08-22T14:08:11.000Z",
+    "tags": ["Prospect", "Nouveau"],
+    "activities": [
+      {
+        "type": "Email envoyé",
+        "description": "Envoi d'une brochure commerciale.",
+        "date": "2025-06-01T08:31:00.000Z"
+      },
+      {
+        "type": "Relance commerciale",
+        "description": "Relance suite à l'email sans réponse.",
+        "date": "2025-06-10T09:45:30.000Z"
+      },
+      {
+        "type": "Appel téléphonique",
+        "description": "Appel pour prise de rendez-vous.",
+        "date": "2025-06-15T10:00:00.000Z"
+      }
+    ],
+    "company": "WebForce",
+    "position": "Chef de Projet",
+    "status": "prospect",
+    "lastContact": "2025-06-15T10:00:00.000Z",
+    "notes": "Projet web en réflexion, à suivre dans 2 semaines."
+  },
+  {
+    "id": "d4e5f6a7-b8c9-4d0e-8f1a-2b3c4d5e6f7a",
+    "firstName": "Sophie",
+    "lastName": "Leroy",
+    "email": "sophie.leroy@example.com",
+    "phone": "06 22 33 44 55",
+    "createdAt": "2023-11-30T17:56:03.000Z",
+    "tags": ["Fidèle", "Premium", "Entreprise"],
+    "activities": [
+      {
+        "type": "Formation",
+        "description": "Participation à une formation produit.",
+        "date": "2025-02-17T11:00:00.000Z"
+      },
+      {
+        "type": "Support technique",
+        "description": "Demande d'assistance sur le logiciel.",
+        "date": "2025-03-02T15:23:17.000Z"
+      },
+      {
+        "type": "Suivi projet",
+        "description": "Point d'avancement du projet en cours.",
+        "date": "2025-05-25T09:40:12.000Z"
+      }
+    ],
+    "company": "InnovateLab",
+    "position": "Analyste",
+    "revenue": 62000,
+    "status": "vip",
+    "lastContact": "2025-06-05T13:20:00.000Z",
+    "notes": "Très satisfaite du service client. Possibilité d'up-sell."
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "firstName": "Mehdi",
+    "lastName": "Boukhalfa",
+    "email": "mehdi.boukhalfa@example.com",
+    "phone": "06 45 78 12 90",
+    "createdAt": "2024-01-15T11:42:19.000Z",
+    "tags": ["Inactif", "Particulier"],
+    "activities": [
+      {
+        "type": "Email envoyé",
+        "description": "Envoi d'une offre de renouvellement.",
+        "date": "2025-03-10T10:00:00.000Z"
+      },
+      {
+        "type": "Relance commerciale",
+        "description": "Relance pour renouvellement non abouti.",
+        "date": "2025-03-20T10:00:00.000Z"
+      },
+      {
+        "type": "Appel téléphonique",
+        "description": "Dernier contact sans réponse.",
+        "date": "2025-04-01T10:00:00.000Z"
+      }
+    ],
+    "status": "inactive",
+    "lastContact": "2025-04-01T10:00:00.000Z",
+    "notes": "Client à relancer dans 3 mois."
+  },
+  {
+    "id": "c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+    "firstName": "Julie",
+    "lastName": "Martin",
+    "email": "julie.martin@example.com",
+    "phone": "07 11 22 33 44",
+    "createdAt": "2024-03-20T08:16:50.000Z",
+    "tags": ["Standard", "Nouveau"],
+    "activities": [
+      {
+        "type": "Appel téléphonique",
+        "description": "Premier entretien de qualification.",
+        "date": "2025-06-11T11:30:00.000Z"
+      },
+      {
+        "type": "Devis envoyé",
+        "description": "Envoi d'un devis personnalisé.",
+        "date": "2025-06-13T14:16:00.000Z"
+      },
+      {
+        "type": "Email envoyé",
+        "description": "Confirmation de réception du devis.",
+        "date": "2025-06-14T09:00:00.000Z"
+      }
+    ],
+    "company": "CloudTech",
+    "position": "Consultant",
+    "revenue": 18000,
+    "status": "active",
+    "lastContact": "2025-06-14T09:00:00.000Z"
+  },
+  {
+    "id": "e3a568f9-0f6a-4c5e-bc2f-ad01e8a6bc2d",
+    "firstName": "Antoine",
+    "lastName": "Girard",
+    "email": "antoine.girard@example.com",
+    "phone": "07 23 45 67 89",
+    "createdAt": "2024-02-28T09:25:41.000Z",
+    "tags": ["Prospect", "Entreprise"],
+    "activities": [
+      {
+        "type": "Présentation produit",
+        "description": "Démonstration de la nouvelle plateforme.",
+        "date": "2025-03-15T10:30:00.000Z"
+      },
+      {
+        "type": "Appel téléphonique",
+        "description": "Discussion sur les besoins du client.",
+        "date": "2025-03-20T11:00:00.000Z"
+      },
+      {
+        "type": "Devis envoyé",
+        "description": "Envoi du devis officiel.",
+        "date": "2025-03-22T09:45:00.000Z"
+      }
+    ],
+    "company": "SmartSolutions",
+    "position": "Manager",
+    "status": "prospect",
+    "lastContact": "2025-03-22T09:45:00.000Z"
+  },
+  {
+    "id": "f7a9b10c-3d2e-4f1a-bc3e-4f6a2d3e4b1c",
+    "firstName": "Isabelle",
+    "lastName": "Perrin",
+    "email": "isabelle.perrin@example.com",
+    "phone": "06 33 44 55 66",
+    "createdAt": "2023-12-10T13:50:25.000Z",
+    "tags": ["VIP", "Premium"],
+    "activities": [
+      {
+        "type": "Appel téléphonique",
+        "description": "Suivi du dossier VIP.",
+        "date": "2025-05-10T15:00:00.000Z"
+      },
+      {
+        "type": "Support technique",
+        "description": "Résolution rapide d'un incident.",
+        "date": "2025-05-12T16:30:00.000Z"
+      },
+      {
+        "type": "Relance commerciale",
+        "description": "Proposition d'une nouvelle offre premium.",
+        "date": "2025-05-20T14:45:00.000Z"
+      }
+    ],
+    "company": "DigitalFlow",
+    "position": "Directeur Général",
+    "revenue": 80000,
+    "status": "vip",
+    "lastContact": "2025-05-20T14:45:00.000Z",
+    "notes": "Client fidèle et très réactif."
+  },
+  {
+    "id": "c1b2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+    "firstName": "Nathalie",
+    "lastName": "Carpentier",
+    "email": "nathalie.carpentier@example.com",
+    "phone": "07 55 66 77 88",
+    "createdAt": "2024-04-05T15:30:00.000Z",
+    "tags": ["Fidèle", "Entreprise"],
+    "activities": [
+      {
+        "type": "Suivi projet",
+        "description": "Point mensuel sur l'avancement du projet.",
+        "date": "2025-06-01T14:00:00.000Z"
+      },
+      {
+        "type": "Formation",
+        "description": "Formation des équipes sur le nouvel outil.",
+        "date": "2025-06-10T09:30:00.000Z"
+      },
+      {
+        "type": "Email envoyé",
+        "description": "Envoi du compte-rendu de réunion.",
+        "date": "2025-06-11T17:00:00.000Z"
+      }
+    ],
+    "company": "DevStudio",
+    "position": "Coordinateur",
+    "status": "active",
+    "lastContact": "2025-06-11T17:00:00.000Z",
+    "notes": "Relation de longue date, très satisfait."
+  },
+  {
+    "id": "f8a7b6c5-d4e3-2f1a-bc0e-d1c2b3a4e5f6",
+    "firstName": "Olivier",
+    "lastName": "Lambert",
+    "email": "olivier.lambert@example.com",
+    "phone": "06 44 55 66 77",
+    "createdAt": "2024-05-12T10:15:30.000Z",
+    "tags": ["Particulier", "Nouveau"],
+    "activities": [
+      {
+        "type": "Appel téléphonique",
+        "description": "Premier contact avec le client.",
+        "date": "2025-06-05T11:30:00.000Z"
+      },
+      {
+        "type": "Email envoyé",
+        "description": "Envoi d'une documentation produit.",
+        "date": "2025-06-06T09:00:00.000Z"
+      },
+      {
+        "type": "Devis envoyé",
+        "description": "Proposition d'une solution personnalisée.",
+        "date": "2025-06-07T15:00:00.000Z"
+      }
+    ],
+    "status": "prospect",
+    "lastContact": "2025-06-07T15:00:00.000Z"
+  },
+  {
+    "id": "a2b3c4d5-e6f7-8a9b-0c1d-2e3f4a5b6c7d",
+    "firstName": "Camille",
+    "lastName": "Roux",
+    "email": "camille.roux@example.com",
+    "phone": "07 88 99 00 11",
+    "createdAt": "2024-06-01T09:00:00.000Z",
+    "tags": ["Actif", "Standard"],
+    "activities": [
+      {
+        "type": "Commande passée",
+        "description": "Achat d'un nouveau service.",
+        "date": "2025-06-10T13:30:00.000Z"
+      },
+      {
+        "type": "Support technique",
+        "description": "Assistance à l'installation.",
+        "date": "2025-06-12T16:00:00.000Z"
+      },
+      {
+        "type": "Rendez-vous",
+        "description": "Planification d'un rendez-vous de suivi.",
+        "date": "2025-06-15T11:00:00.000Z"
+      }
+    ],
+    "company": "BusinessPro",
+    "position": "Consultant",
+    "revenue": 42000,
+    "status": "active",
+    "lastContact": "2025-06-15T11:00:00.000Z"
+  },
+  {
+    "id": "d9e8f7c6-b5a4-3d2e-1f0a-9b8c7d6e5f4a",
+    "firstName": "Adrien",
+    "lastName": "Fontaine",
+    "email": "adrien.fontaine@example.com",
+    "phone": "07 21 23 24 25",
+    "createdAt": "2023-09-15T14:40:00.000Z",
+    "tags": ["Inactive", "Standard"],
+    "activities": [
+      {
+        "type": "Relance commerciale",
+        "description": "Tentative de relance après inactivité.",
+        "date": "2025-05-22T16:00:00.000Z"
+      },
+      {
+        "type": "Appel téléphonique",
+        "description": "Aucune réponse, message laissé.",
+        "date": "2025-05-27T10:00:00.000Z"
+      },
+      {
+        "type": "Email envoyé",
+        "description": "Dernier mail de relance.",
+        "date": "2025-06-01T08:00:00.000Z"
+      }
+    ],
+    "company": "TechVision",
+    "position": "Spécialiste",
+    "status": "inactive",
+    "lastContact": "2025-06-01T08:00:00.000Z",
+    "notes": "A relancer dans 6 mois."
+  },
+  {
+    "id": "e4f3d2c1-b0a9-8c7d-6e5f-4a3b2c1d0e9f",
+    "firstName": "Chloé",
+    "lastName": "Robert",
+    "email": "chloe.robert@example.com",
+    "phone": "06 77 88 99 10",
+    "createdAt": "2024-02-10T12:00:00.000Z",
+    "tags": ["Premium", "Entreprise"],
+    "activities": [
+      {
+        "type": "Présentation produit",
+        "description": "Présentation de la nouvelle plateforme.",
+        "date": "2025-04-10T10:00:00.000Z"
+      },
+      {
+        "type": "Formation",
+        "description": "Inscription à une formation avancée.",
+        "date": "2025-04-15T14:00:00.000Z"
+      },
+      {
+        "type": "Support technique",
+        "description": "Ouverture d'un ticket de support.",
+        "date": "2025-04-18T09:30:00.000Z"
+      }
+    ],
+    "company": "StartupHub",
+    "position": "Développeur",
+    "revenue": 59000,
+    "status": "vip",
+    "lastContact": "2025-04-18T09:30:00.000Z"
+  },
+  {
+    "id": "f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c",
+    "firstName": "Julien",
+    "lastName": "Petit",
+    "email": "julien.petit@example.com",
+    "phone": "07 13 24 35 46",
+    "createdAt": "2024-05-20T16:17:00.000Z",
+    "tags": ["Standard", "Fidèle"],
+    "activities": [
+      {
+        "type": "Support technique",
+        "description": "Assistance sur incident logiciel.",
+        "date": "2025-06-02T14:00:00.000Z"
+      },
+      {
+        "type": "Appel téléphonique",
+        "description": "Suivi post-résolution.",
+        "date": "2025-06-09T11:30:00.000Z"
+      },
+      {
+        "type": "Relance commerciale",
+        "description": "Proposition d'une extension de service.",
+        "date": "2025-06-15T09:00:00.000Z"
+      }
+    ],
+    "company": "CodeFactory",
+    "position": "Consultant",
+    "status": "active",
+    "lastContact": "2025-06-15T09:00:00.000Z"
+  },
+  {
+    "id": "b5c6d7e8-f9a0-1b2c-3d4e-5f6a7b8c9d0e",
+    "firstName": "Sarah",
+    "lastName": "Bernard",
+    "email": "sarah.bernard@example.com",
+    "phone": "06 99 88 77 66",
+    "createdAt": "2023-10-10T13:00:00.000Z",
+    "tags": ["Nouveau", "Particulier"],
+    "activities": [
+      {
+        "type": "Appel téléphonique",
+        "description": "Appel de bienvenue.",
+        "date": "2025-06-12T10:00:00.000Z"
+      },
+      {
+        "type": "Email envoyé",
+        "description": "Envoi du guide d'utilisation.",
+        "date": "2025-06-13T15:30:00.000Z"
+      },
+      {
+        "type": "Rendez-vous",
+        "description": "Planification d'un rendez-vous de suivi.",
+        "date": "2025-06-20T09:00:00.000Z"
+      }
+    ],
+    "status": "prospect",
+    "lastContact": "2025-06-20T09:00:00.000Z"
+  }
+]
