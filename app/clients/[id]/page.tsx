@@ -1,18 +1,18 @@
 import { notFound } from 'next/navigation';
 import clients from '@/data/clients.json';
 import { Clock, Mail, Phone, Briefcase, Tag, Activity, DollarSign, User } from 'lucide-react';
-// avoir l'id du client a l'aide de params
-interface PageProps {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
 
-export default function ClientPage({ params }: PageProps) {
+type Props = {
+  params: { id: string };
+};
+
+export default function ClientPage({ params }: Props) {
   const client = clients.find((c) => c.id === params.id);
 
   if (!client) {
     return notFound();
   }
+
 
     // formater la date de création du client
   const createdAt = new Date(client.createdAt).toLocaleDateString('fr-FR', {
