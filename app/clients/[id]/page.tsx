@@ -6,13 +6,13 @@ type Props = {
   params: { id: string };
 };
 
-export default function ClientPage({ params }: Props) {
-  const client = clients.find((c) => c.id === params.id);
+export default async function ClientPage({ params }: Props) {
+  const { id } = await params; // Await params to resolve id
+  const client = clients.find((c) => c.id === id);
 
   if (!client) {
     return notFound();
   }
-
 
     // formater la date de création du client
   const createdAt = new Date(client.createdAt).toLocaleDateString('fr-FR', {
