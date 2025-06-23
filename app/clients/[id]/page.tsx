@@ -6,6 +6,9 @@ interface ClientPageProps {
   params: {
     id: string;
   };
+  searchParams?: {
+    [key: string]: string | string[] | undefined;
+  };
 }
 
 export default function ClientPage({ params }: ClientPageProps) {
