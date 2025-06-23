@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation';
 import clients from '@/data/clients.json';
 import { Clock, Mail, Phone, Briefcase, Tag, Activity, DollarSign, User } from 'lucide-react';
+type Props = {
+  params: Promise<{ id: string }>;
+};
 
-import { PageProps } from 'next'; // Import PageProps from next
-
-// utiliser pageprop pour définir le type des paramètres de la page
-export default async function ClientPage({ params }: PageProps<{ id: string }>) {
+export default async function ClientPage({ params }: Props) {
   const { id } = await params; // Await params to resolve id
   const client = clients.find((c) => c.id === id);
 
