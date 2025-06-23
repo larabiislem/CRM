@@ -4,7 +4,7 @@ import { Clock, Mail, Phone, Briefcase, Tag, Activity, DollarSign, User } from '
 type Props = {
   params: Promise<{ id: string }>;
 };
-
+// obtenire l'id du client depuis les params
 export default async function ClientPage({ params }: Props) {
   const { id } = await params; // Await params to resolve id
   const client = clients.find((c) => c.id === id);
