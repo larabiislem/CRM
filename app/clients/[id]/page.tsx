@@ -2,16 +2,12 @@ import { notFound } from 'next/navigation';
 import clients from '@/data/clients.json';
 import { Clock, Mail, Phone, Briefcase, Tag, Activity, DollarSign, User } from 'lucide-react';
 // avoir l'id du client a l'aide de params
-interface ClientPageProps {
-  params: {
-    id: string;
-  };
-  searchParams?: {
-    [key: string]: string | string[] | undefined;
-  };
+interface PageProps {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default function ClientPage({ params }: ClientPageProps) {
+export default function ClientPage({ params }: PageProps) {
   const client = clients.find((c) => c.id === params.id);
 
   if (!client) {
